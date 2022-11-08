@@ -1,0 +1,223 @@
+@font-face {
+    font-family: DaxlinePro;
+    font-display: swap;
+    src:  url("../fonts/DaxlinePro-Black.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: DaxlinePro;
+    font-display: swap;
+    src:  url("../fonts/DaxlinePro-Bold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: DaxlinePro;
+    font-display: swap;
+    src:  url("../fonts/DaxlinePro-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: DaxlinePro;
+    font-display: swap;
+    src:  url("../fonts/DaxlinePro-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: DaxlinePro;
+    font-display: swap;
+    src:  url("../fonts/DaxlinePro-Thin.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+* {
+    font-family: DaxlinePro, sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: #000;
+    box-sizing: border-box;
+}
+
+h1{
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 34px;
+}
+
+.container {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1350px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+header{
+    border-bottom: 1px solid #0a7ddd;
+}
+footer{
+    border-top: 1px solid #0a7ddd;
+    padding-top: 15px;
+}
+.interview_wrapper{
+    width: 100%;
+    margin: 30px 0;
+    padding: 25px 0;
+    border: 1px solid rgba(202,215,226,0.5);
+    background: #f9fbfc;
+}
+.interview_wrapper .interview_ttl{
+    padding: 0 25px 25px 25px;
+    border-bottom: 1px solid rgba(202,215,226,0.5);
+}
+.interview_wrapper .interview_ttl h2{
+    font-size: 26px;
+    line-height: 1;
+    font-weight: 600;
+    margin: 0;
+}
+.form_wrapper{
+    width: 100%;
+}
+.form_wrapper .field_wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    border-bottom: 1px solid rgba(202,215,226,0.5);
+}
+.form_wrapper .field_wrap .field_caption{
+    margin: 0;
+    width: 60%;
+}
+.form_wrapper .field_wrap .radio_group{
+    padding-bottom: 20px;
+    width: 31%;
+    display: flex;
+    justify-content: flex-start;
+}
+.form_wrapper .field_wrap .radio_group .radio_field{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    position: relative;
+}
+.form_wrapper .field_wrap .radio_group .radio_field input{
+    display: none;
+}
+.form_wrapper .field_wrap .radio_group .radio_field label:before {
+    position: absolute;
+    top: 22px;
+    left: -2px;
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid #cccccc;
+    background: #fff;
+}
+.form_wrapper .field_wrap .radio_group .radio_field input:checked+ label:after {
+    position: absolute;
+    top: 25px;
+    left: 1px;
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 1px solid #cccccc;
+    background: #00ACC2;
+}
+.form_wrapper .field_wrap.text{
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+.form_wrapper .field_wrap.text textarea{
+    box-sizing: border-box;
+    margin-top: 15px;
+    padding: 5px;
+    border: 1px solid rgba(202,215,226,0.5);
+    width: 100%;
+    max-height: 150px;
+    resize: none;
+}
+.form_wrapper .btn-submit{
+    display: block;
+    margin: 25px 25px 0 auto;
+    width: 220px;
+    text-align: center;
+    padding: 15px;
+    background: #00ACC2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form_wrapper .btn-submit:hover{
+    background: #008A96;
+}
+
+.interview_popup{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    padding: 50px;
+    text-align: center;
+    border: 1px solid rgba(202,215,226,0.5);
+}
+.interview_popup .figure_v{
+    margin-bottom: 20px;
+}
+.interview_popup .figure_v svg{
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid rgba(202,215,226,0.5);
+}
+.interview_popup p{
+    font-weight: 500;
+    margin: 0;
+}
+.interview_popup a{
+    text-decoration: none;
+    display: block;
+    margin: 40px auto 0 auto;
+    color: #fff;
+    background: #00ACC2;
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.interview_popup a:hover{
+    background: #008A96;
+}
+
+@media all and (max-width: 767px ){
+    .form_wrapper .field_wrap{
+        padding: 15px 25px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .form_wrapper .field_wrap .field_caption{
+        font-size: 14px;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .form_wrapper .field_wrap.text textarea{
+        margin-top: 8px;
+        margin-bottom: 10px;
+        max-height: 120px;
+    }
+    .form_wrapper .btn-submit{
+        font-size: 14px;
+        padding: 9px;
+        width: 150px;
+    }
+}
